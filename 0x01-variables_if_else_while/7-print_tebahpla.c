@@ -1,20 +1,16 @@
 #include <stdio.h>
 /**
- * main - prints all combination of single digits
+ * main - prin the alphabets in reverse
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
+	char le;
 
-	for (n = 48; n < 58; n++)
+	for (le = 'z'; le >= 'a'; le--)
+		putchar(le);
 
-		putchar(n);
-	if (n != 57)
-	{
-		putchar(',');
-		putchar(' ');
-	}
 	putchar('\n');
+
 	return (0);
 }
